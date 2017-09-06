@@ -1,12 +1,12 @@
-# jaspe-signin
+# jaspe-signup
 Jaspe App : How to use Jaspe to create application with software component and contract
 
 
 This tutoriel shows how to use Jaspe to create NodeJs application.
 1. Present software component paradigm in Jaspe
 2. Present contract paradigm in Jaspe
-3. Example with SignIn Component
-4. Use SignIn Component with an Express app
+3. Example with SignUp Component
+4. Use SignUp Component with an Express app
 
 
 # Present software component paradigm 
@@ -42,17 +42,17 @@ If I want to create an account and next to notify user, account needs to use "no
 
 After the first step, this model is obtained:
 
-img
+![alt text](https://raw.githubusercontent.com/devOups/jaspe-signup/master/img/jaspe-Account-Notifier-Component.png)
 
 Now think about reusing, the question which has to be asked is : 
 
 If I want to reuse Account in other project, do I really need Notifier service ?
-Not necessary ! But according to this model Account cannot be reused without Notifier.
+Not necessary ! But according to this model **AccountComponent cannot be reused without NotifierComponent**.
 
 
 The more judicious solution is to use a third component like this : 
 
-img
+![alt text](https://raw.githubusercontent.com/devOups/jaspe-signup/master/img/jaspe-AccountNotifierComponent.png)
 
 
 AccountNotifierComponent provides a service named _create_. This service enables to create new account by using AccountComponent and notify user by using NotifierComponent.
@@ -65,13 +65,14 @@ _Jaspe also provides features as contract paradigm, go to the next part !_
 # Present contract paradigm
 
 Contract paradigm proposes to define contract on methods or models to garanty any properties and assertions.
-The Eiffel language offers complete approach and tools to program with contract paradigm (). There are three important notions
+The [Eiffel language](https://en.wikipedia.org/wiki/Eiffel_(programming_language)) offers complete approach and tools to program with contract paradigm. 
+There are three important notions
 with contract paradigm. : 
 1. pre-conditions
 2. post-conditions
 3. Invariant
 
-More informations here : 
+More informations here : https://en.wikipedia.org/wiki/Design_by_contract
 
 > Currently, Jaspe proposes only pre-conditions features
 
@@ -82,6 +83,8 @@ you have to define contract by describing constraints for each parameter used by
 
 
 
-# Example with SignIn Component
+# Example with SignUp Component
 
-# Use SignIn Component with Express
+![alt text](https://raw.githubusercontent.com/devOups/jaspe-signup/master/img/jaspe-signup.png)
+
+# Use SignUp Component with Express
