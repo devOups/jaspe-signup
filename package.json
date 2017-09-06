@@ -1,10 +1,13 @@
 {
-  "name": "jaspe-signup",
+  "name": "jaspe-signin",
   "version": "1.0.0",
-  "description": "Is an example to use Jaspe and to create NodeJs back-end app to sign-up user",
+  "description": "Is an example to use Jaspe and to create NodeJs back-end app to sign-in user",
   "main": "main.js",
   "dependencies": {
-    "jaspe": "^1.0.1"
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "jaspe": "^1.0.1",
+    "pug": "^2.0.0-rc.3"
   },
   "devDependencies": {},
   "scripts": {
