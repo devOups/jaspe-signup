@@ -1,0 +1,14 @@
+{
+  "name": "jaspe-signin",
+  "version": "1.0.0",
+  "description": "Is an example to use Jaspe and to create NodeJs back-end app to sign-in user",
+  "main": "main.js",
+  "dependencies": {
+    "jaspe": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "quentin saieb <pitoux16+jaspe@gmail.com>"
+}
