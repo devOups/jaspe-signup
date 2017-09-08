@@ -1,7 +1,7 @@
 {
-  "name": "jaspe-signin",
+  "name": "jaspe-signup",
   "version": "1.0.0",
-  "description": "Is an example to use Jaspe and to create NodeJs back-end app to sign-in user",
+  "description": "Is an example to use Jaspe and to create NodeJs back-end app to sign-up user",
   "main": "main.js",
   "dependencies": {
     "jaspe": "^1.0.1"
