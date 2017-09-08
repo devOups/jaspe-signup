@@ -7,8 +7,8 @@ let services = new Map()
 /**
  * SignUp service
  */
-let signin_requirements = new Map()
-signin_requirements.set('username', [
+let signup_requirements = new Map()
+signup_requirements.set('username', [
   {
     name: 'typeOf string',
     validator: v.typeOf,
@@ -24,7 +24,7 @@ signin_requirements.set('username', [
   }
 ])
 
-signin_requirements.set('email', [
+signup_requirements.set('email', [
   {
     name: 'typeOf string',
     validator: v.typeOf,
@@ -44,7 +44,7 @@ signin_requirements.set('email', [
   }
 ])
 
-signin_requirements.set('password', [
+signup_requirements.set('password', [
   {
     name: 'typeOf string',
     validator: v.typeOf,
@@ -65,7 +65,7 @@ signin_requirements.set('password', [
   }
 ])
 
-signin_requirements.set('age', [
+signup_requirements.set('age', [
   {
     name: 'typeof integer',
     validator: v.isInteger
@@ -81,7 +81,7 @@ signin_requirements.set('age', [
   }
 
 ])
-services.set('signUp', signin_requirements)
+services.set('signUp', signup_requirements)
 
 
 module.exports = new Contract('SignUp', services)
